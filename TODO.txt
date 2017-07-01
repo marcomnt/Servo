@@ -1,0 +1,26 @@
+1) Modelar o problema
+1.1) Resolver como fazer pra usar função de transferência no Python
+1.2) Resolver como fazer pra usar Espaço estdo em python ?
+
+2)Analisar
+ Zeros,polos e resposta ao degrau
+
+2.1) Sistema de malha aberta
+2.2) Sistema de malha fechada com PID
+2.2.1) "Vários" KPs ?
+2.2.2) "Vários" KIs ?
+2.2.3) "Vários" KDs ?
+2.2.4) Com Kp,Ki,kd Ideal ->  Com Kp,Ki,kd Ideal diferente do site;
+
+3)Root Locus
+
+3.1) Sistema de malha aberta
+3.2) Sistema de malha fechada com PID
+3.2.1) "Vários" KPs ?
+3.2.2) "Vários" KIs ?
+3.2.3) "Vários" KDs ?
+3.2.4) Com Kp,Ki,kd Ideal ->  Com Kp,Ki,kd Ideal diferente do site;
+
+4) Fazer o PID com AMP OP
+ PID ideal
+
