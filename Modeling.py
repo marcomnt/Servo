@@ -11,9 +11,13 @@ class Modeling(object):
 		self.Lever=Lever
 		self.lengthBeam=lengthBeam
 		self.ballInertia=ballInertia
+		print("modeled")
 
 	def modeTransferFunction(self):
-		pass
+		return 0
 
 	def modeSpaceState(self):
-		pass
+		return 0
+
+	def toAmpOp(self):
+		print(0)

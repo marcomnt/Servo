@@ -1,6 +1,8 @@
 from scipy import *
 from numpy import *
 from control import *
+from PID import PID
+
 
 class Analysis(object):
 	"""docstring for Analisis"""
@@ -9,33 +11,35 @@ class Analysis(object):
 		self.Kps=Kps
 		self.Kis=Kis
 		self.Kds=Kds
+		self.Analyse()
 
 	def Analyse(self):
 		self.allOpen()
 		self.AnalysisPID()
+		print("Analyse")
 
 	def AnalysisPID(self):
-		Kp=Kps[1]
-		Ki=Kis[1]
-		kd=Kds[1]
-		pid = PID(kp,ki,kd,model)
+		kp=self.Kps[1]
+		ki=self.Kis[1]
+		kd=self.Kds[1]
+		pid = PID(kp,ki,kd,self.model)
 		self.allPID(pid)
 
-		Kp=self.Kps[0]
-		pidO = PID(kp,ki,kd,model)
+		kp=self.Kps[0]
+		pidO = PID(kp,ki,kd,self.model)
 		pid=pidO.pid
 		self.allPID(pid)
-		Kp=self.Kps[1]
+		kp=self.Kps[1]
 
 		
-		Ki=self.Kis[0]
-		pidO = PID(kp,ki,kd,model)
+		ki=self.Kis[0]
+		pidO = PID(kp,ki,kd,self.model)
 		pid=pidO.pid
 		self.allPID(pid)
-		Ki=self.Kis[1]
+		ki=self.Kis[1]
 
-		Kd=self.Kds[0]
-		pidO = PID(kp,ki,kd,model)
+		kd=self.Kds[0]
+		pidO = PID(kp,ki,kd,self.model)
 		pid=pidO.pid
 		self.allPID(pid)
 
@@ -43,6 +47,7 @@ class Analysis(object):
 		self.zerosOpen()
 		self.polesOpen()
 		self.rootLocusOpen()
+		print("allmight")
 
 	def zerosOpen(self):
 		pass
@@ -57,6 +62,7 @@ class Analysis(object):
 		self.zerosPID(pid)
 		self.polesPID(pid)
 		self.rootLocusPID(pid)
+		print("allmight2")
 
 	def zerosPID(self,pid):
 		pass
