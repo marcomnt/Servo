@@ -4,7 +4,6 @@ from control import *
 
 class PID(object):
 	"""docstring for PID"""
-	def __init__(self, arg):
-		super(PID, self).__init__()
-		self.arg = arg
+	def __init__(self, kp, ki, kd, model):
+		self.pid=0;
 		
