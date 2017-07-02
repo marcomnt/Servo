@@ -13,6 +13,9 @@
 2.2.4) KP absurdo e KI,KD ideal
 
 3)Root Locus
+
+3.1) Sistema de malha aberta
+3.2) Sistema de malha fechada com PID
 3.2.1) Tudo Ideal
 3.2.2)  KIs absurdo e KP, KD ideal
 3.2.3) KDs absurdo e KP,KI ideal

@@ -7,9 +7,9 @@ from PID import PID
 
 mass = 0.111;   #mass of the ball == 0.11 kg
 Radius = 0.015;	#radius of the ball  ==0.015 m
+Lever = 0.03;	#lever arm offset    ==0.03 m
 gravitty = -9.8;	#gravitational acceleration    ==9.8 m/s^2  
-Lever = 1.0;	#lever arm offset    ==0.03 m
-lengthBeam = 0.03;	#length of the beam            ==1.0 m
+lengthBeam = 1.0;	#length of the beam            ==1.0 m
 ballInertia = 9.99e-6; # ball's moment of inertia   ==9.99e-6 kg.m^2
 
 Kps=[50,15] #Proporcional constant definition in format: [Absurd, Ideal]
@@ -22,7 +22,7 @@ class main(object):
 	"""docstring for main"""
 
 	def __init__(self):
-		self.modeler = Modeling(mass, Radius, gravitty, Lever, lengthBeam, ballInertia)
+		self.modeler = Modeling(mass, Radius, Lever, gravitty, lengthBeam, ballInertia)
 		analysor = Analysis(self.model()[0], Kps, Kis, Kds) #with trasfer function
 		analysor = Analysis(self.model()[1], Kps, Kis, Kds) #with Space State
 
