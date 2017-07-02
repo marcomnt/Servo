@@ -10,7 +10,8 @@ class PID(object):
 		self.ki=ki
 		self.kd=kd
 		self.model=model
-		print("PID construtor=",  self.kp, self.ki, self.kd)
+		#print("PID construtor=",  self.kp, self.ki, self.kd)
 		
 	def toAmpOp(self):
-		print("AmpOpPID");
+		#print("AmpOpPID")
+		pass

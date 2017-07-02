@@ -16,7 +16,7 @@ class Analysis(object):
 	def Analyse(self):
 		self.allOpen()
 		self.AnalysisPID()
-		print("Analyse")
+		#print("Analyse")
 
 	def AnalysisPID(self):
 		kp=self.Kps[1]
@@ -47,7 +47,7 @@ class Analysis(object):
 		self.zerosOpen()
 		self.polesOpen()
 		self.rootLocusOpen()
-		print("allmight")
+		#print("allmight")
 
 	def zerosOpen(self):
 		pass
@@ -62,7 +62,7 @@ class Analysis(object):
 		self.zerosPID(pid)
 		self.polesPID(pid)
 		self.rootLocusPID(pid)
-		print("allmight2")
+		#print("allmight2")
 
 	def zerosPID(self,pid):
 		pass
